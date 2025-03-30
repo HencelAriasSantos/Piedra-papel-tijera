@@ -1,0 +1,141 @@
+:root {
+  /* Default (Light Mode) Theme */
+  --color-fondo: #f0f0f0;
+  --color-texto: #333333;
+  --color-botones: #555555;
+  --color-botones-hover: #333333;
+  --color-texto-botones: #ffffff;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html[data-theme='dark'] {
+  /* Dark Theme Overrides */
+  --color-fondo: #121212;
+  --color-texto: #e9ecef;
+  --color-botones: #495057;
+  --color-botones-hover: #6c757d;
+  --color-texto-botones: #e9ecef;
+}
+
+html[data-theme='blue'] {
+  /* Blue Theme (Placeholder) Overrides */
+  --color-fondo: #650000;
+  --color-texto: #ffa9ca;
+  --color-botones: #ffa9ca;
+  --color-botones-hover: #540000;
+  --color-texto-botones: #ffffff;
+}
+
+html[data-theme='green'] {
+  /* Green Theme (Placeholder) Overrides */
+  --color-fondo: #e6fff0;
+  --color-texto: #198754;
+  --color-botones: #20c997;
+  --color-botones-hover: #198754;
+  --color-texto-botones: #ffffff;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  margin: 0;
+  padding-top: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Add transition here too */
+}
+
+h1 {
+  color: var(--color-texto);
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.opción button {
+  background-color: var(--color-botones);
+  color: var(--color-texto-botones);
+  /* Use button text color variable */
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  /* Add color transition */
+}
+
+.opción button:hover {
+  background-color: var(--color-botones-hover);
+}
+
+.resultado {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  min-height: 25px;
+}
+
+.Racha {
+  margin-top: 10px;
+  font-size: 16px;
+  color: var(--color-texto);
+}
+
+.tema {
+  /* Style the theme toggle button */
+  background-color: var(--color-botones);
+  color: var(--color-texto-botones);
+  /* Use button text color variable */
+  border: none;
+  padding: 10px 15px;
+  margin-top: 20px;
+  /* Add some space above */
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  /* Add color transition */
+}
+
+.tema:hover {
+  background-color: var(--color-botones-hover);
+}
+
+/* Styles for the new theme selector */
+.theme-selector {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Space between label and buttons */
+}
+
+.theme-selector span {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.theme-selector button {
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid var(--color-botones);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.theme-selector button:hover {
+  background-color: var(--color-botones);
+  color: var(--color-texto-botones);
+}

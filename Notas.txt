@@ -1,0 +1,27 @@
+"Dragon, Knight, Wizard" (fantasía épica).
+
+Una version de kirby de roca, cortador y tijera
+Inspiraciones para posibles paletas de colores.
+Madona con su rosa rojo o kirby con su rosa-rojo-verde siendo rojo los botones, fondo rosa, y algun distintivo verde a pensar
+el brujo demonologia del wow con su verde morado
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --color-fondo: #ffffff;
+      --color-texto: #212529;
+      --color-botones: #007bff;
+      ---color-botones-hover: #0056b3;
+      /* Transiciones para suavizar el cambio */    
+    }
+  }
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Sobrescribimos las variables con valores para el tema oscuro */
+    --color-fondo: #121212;
+    /* Fondo muy oscuro */
+    --color-texto: #e9ecef;
+    /* Texto claro (casi blanco) */
+    --color-botones: #495057;
+    /* Borde gris oscuro */
+    --color-botones-hover: #1e1e1e;
+    /* Fondo de tarjeta oscuro */
